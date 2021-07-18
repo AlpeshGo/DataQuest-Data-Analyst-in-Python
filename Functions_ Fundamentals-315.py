@@ -10,6 +10,12 @@ for element in a_list:
 print(sum_manual)
 print(sum(a_list))
 
+#Output:
+###
+103945
+103945
+###
+
 ## 2. Built-in Functions ##
 
 ratings = ['4+', '4+', '4+', '9+', '12+', '12+', '17+', '17+']
@@ -25,7 +31,10 @@ for rating in ratings:
         
 print(content_ratings)        
     
-    
+#Output:
+###
+{'4+': 3, '9+': 1, '12+': 2, '17+': 2}
+###
     
 
 ## 3. Creating Our Own Functions ##
@@ -36,6 +45,12 @@ def square(a_number):
 
 squared_10 = square(a_number = 10)
 squared_16 = square(a_number = 16)
+
+#Output:
+###
+100
+256
+###
 
 ## 4. The Structure of a Function ##
 
@@ -49,6 +64,11 @@ add_90 = add_10(number = 90)
 print(add_30)
 print(add_90)
     
+#Output:
+###
+40
+100
+###
 
 ## 5. Parameters and Arguments ##
 
@@ -57,6 +77,12 @@ def square(a):
 
 squared_6 = square(6)
 squared_11 = square(11)
+
+#Output:
+###
+36
+121
+###
 
 ## 6. Extract Values from Any Column ##
 
@@ -74,7 +100,11 @@ def extract(index):
     return column
 
 genres = extract(11)
-        
+
+#Output:
+###
+['Social Networking', 'Photo & Video', 'Games', 'Games', 'Music', 'Social Networking', 'Reference', 'Games', 'Music', 'Games', 'Games', 'Games', 'Games', 'Games', 'Games', 'Games', 'Games', 'Games', 'Games', 'Games', 'Health & Fitness', 'Games', 'Weather', 'Games', 'Utilities', 'Games', 'Games', 'Travel', 'Games', 'Games', 'Shopping', 'Games', 'Games', 'Games', 'Games', 'Music', 'Games', 'Games', 'Games', 'Games', 'Games', 'Games', 'Health & Fitness', 'Social Networking', 'Games', 'Games', 'Games', 'News', 'Social Networking', 'Navigation']
+###
 
 ## 7. Creating Frequency Tables ##
 
@@ -103,7 +133,11 @@ def freq_table(column):
     return frequency_table
 
 genres_ft = freq_table(genres)
-        
+
+#Output:
+###
+{'Book': 112, 'Business': 57, 'Catalogs': 10, 'Education': 453, 'Entertainment': 535, 'Finance': 104, 'Food & Drink': 63, 'Games': 3862, 'Health & Fitness': 180, 'Lifestyle': 144, 'Medical': 23, 'Music': 138, 'Navigation': 46, 'News': 75, 'Photo & Video': 349, 'Productivity': 178, 'Reference': 64, 'Shopping': 122, 'Social Networking': 167, 'Sports': 114, 'Travel': 81, 'Utilities': 248, 'Weather': 72}
+###
 
 ## 8. Writing a Single Function ##
 
@@ -125,6 +159,10 @@ def freq_table(index):
     return frequency_table
 
 ratings_ft = freq_table(7)
+#Output:
+###
+{'0.0': 929, '1.0': 44, '1.5': 56, '2.0': 106, '2.5': 196, '3.0': 383, '3.5': 702, '4.0': 1626, '4.5': 2663, '5.0': 492}
+###
 
 ## 9. Reusability and Multiple Parameters ##
 
@@ -146,6 +184,12 @@ def freq_table(data_set, index):
             
     return frequency_table
 ratings_ft = freq_table(data_set=apps_data, index=7)
+
+#Output:
+###
+{'0.0': 929, '1.0': 44, '1.5': 56, '2.0': 106, '2.5': 196, '3.0': 383, '3.5': 702, '4.0': 1626, '4.5': 2663, '5.0': 492}
+###
+
 
 ## 10. Keyword and Positional Arguments ##
 
@@ -169,6 +213,14 @@ def freq_table(data_set, index):
 content_ratings_ft = freq_table(apps_data, 10)
 ratings_ft = freq_table(apps_data, 7)
 genres_ft = freq_table(apps_data, 11)
+
+#Output:
+###
+{'12+': 1155, '17+': 622, '4+': 4433, '9+': 987}
+{'0.0': 929, '1.0': 44, '1.5': 56, '2.0': 106, '2.5': 196, '3.0': 383, '3.5': 702, '4.0': 1626, '4.5': 2663, '5.0': 492}
+{'Book': 112, 'Business': 57, 'Catalogs': 10, 'Education': 453, 'Entertainment': 535, 'Finance': 104, 'Food & Drink': 63, 'Games': 3862, 'Health & Fitness': 180, 'Lifestyle': 144, 'Medical': 23, 'Music': 138, 'Navigation': 46, 'News': 75, 'Photo & Video': 349, 'Productivity': 178, 'Reference': 64, 'Shopping': 122, 'Social Networking': 167, 'Sports': 114, 'Travel': 81, 'Utilities': 248, 'Weather': 72}
+###
+
 
 ## 11. Combining Functions ##
 
@@ -202,6 +254,11 @@ def mean(data_set, index):
 
 avg_price = mean(apps_data, 4)
 
+#Output:
+###
+1.7262178685562666
+###
+
 ## 12. Debugging Functions ##
 
 def extract(data_set, index):
@@ -231,3 +288,9 @@ def mean(data_set, index):
 
 avg_price = mean(apps_data, 4)
 avg_rating = mean(apps_data, 7)
+
+#Output:
+###
+1.7262178685562666
+3.526955675976101
+###
