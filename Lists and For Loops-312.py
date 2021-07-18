@@ -15,9 +15,10 @@ total=ratings_1+ratings_2+ratings_3
 average=total/3
 
 #Output:
-```
+###
 2422346.3333333335
-```
+###
+
 ## 3. Negative Indexing ##
 
 row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
@@ -30,9 +31,10 @@ total_rating=rating_1+rating_2+rating_3
 average_rating=total_rating/3
 
 #Output:
-```
+###
 4.166666666666667
-```
+###
+
 ## 4. Retrieving Multiple List Elements ##
 
 row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
@@ -46,12 +48,12 @@ pandora_rating_data=[row_5[0], row_5[3], row_5[4]]
 avg_rating=((row_1[4]+row_2[4]+row_5[4])/3)
 
 #Output:
-```
+###
 ['Facebook', 2974676, 3.5]
 ['Instagram', 2161558, 4.5]
 ['Pandora - Music & Radio', 1126879, 4.0]
 4.0
-```
+###
 
 ## 5. List Slicing ##
 
@@ -65,11 +67,11 @@ last_3_fb=row_1[-3:]
 pandora_3_4=row_5[2:4]
 
 #Output:
-```
+###
 ['Facebook', 0.0, 'USD', 2974676]
 ['USD', 2974676, 3.5]
 ['USD', 1126879]
-```
+###
 
 ## 6. List of Lists ##
 
@@ -82,10 +84,10 @@ app_data_set=[row_1, row_2, row_3, row_4, row_5]
 avg_rating=(app_data_set[0][-1]+app_data_set[1][-1]+app_data_set[2][-1]+app_data_set[3][-1]+app_data_set[4][-1])/5
 
 #Output:
-```
+###
 [['Facebook', 0.0, 'USD', 2974676, 3.5], ['Instagram', 0.0, 'USD', 2161558, 4.5], ['Clash of Clans', 0.0, 'USD', 2130805, 4.5], ['Temple Run', 0.0, 'USD', 1724546, 4.5], ['Pandora - Music & Radio', 0.0, 'USD', 1126879, 4.0]]
 4.2
-```
+###
 
 ## 7. Opening a File ##
 
@@ -98,10 +100,10 @@ print(apps_data[0:1])
 print(apps_data[1:2])
 
 #Output:
-```
+###
 [['id', 'track_name', 'size_bytes', 'currency', 'price', 'rating_count_tot', 'rating_count_ver', 'user_rating', 'user_rating_ver', 'ver', 'cont_rating', 'prime_genre', 'sup_devices.num', 'ipadSc_urls.num', 'lang.num', 'vpp_lic']]
 [['284882215', 'Facebook', '389879808', 'USD', '0.0', '2974676', '212', '3.5', '3.5', '95.0', '4+', 'Social Networking', '37', '1', '29', '1']]
-```
+###
 
 ## 8. Repetitive Processes ##
 
@@ -116,13 +118,13 @@ for each_list in app_data_set:
     print(each_list)
     
 #Output:
-```
+###
 ['Facebook', 0.0, 'USD', 2974676, 3.5]
 ['Instagram', 0.0, 'USD', 2161558, 4.5]
 ['Clash of Clans', 0.0, 'USD', 2130805, 4.5]
 ['Temple Run', 0.0, 'USD', 1724546, 4.5]
 ['Pandora - Music & Radio', 0.0, 'USD', 1126879, 4.0]
-```
+###
 
 ## 9. For Loops ##
 
@@ -142,13 +144,13 @@ for row in app_data_set:
 avg_rating=rating_sum/len(app_data_set)
 
 #Output:
-```
+###
 3.5
 8.0
 12.5
 17.0
 21.0
-```
+###
     
 
 ## 10. The Average App Rating ##
@@ -164,9 +166,9 @@ for row in apps_data[1:]:
 avg_rating = rating_sum/len(apps_data[1:])
 
 #Output:
-```
+###
 3.526955675976101
-```
+###
 
 ## 11. Alternative Method to Compute an Average ##
 
@@ -185,7 +187,7 @@ avg_rating = sum(all_ratings)/len(all_ratings)
 avg_rating
 
 #Output:
-```
+###
 3.526955675976101
-```
+###
     
