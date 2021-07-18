@@ -15,8 +15,9 @@ total=ratings_1+ratings_2+ratings_3
 average=total/3
 
 #Output:
+```
 2422346.3333333335
-
+```
 ## 3. Negative Indexing ##
 
 row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
@@ -29,8 +30,9 @@ total_rating=rating_1+rating_2+rating_3
 average_rating=total_rating/3
 
 #Output:
+```
 4.166666666666667
-
+```
 ## 4. Retrieving Multiple List Elements ##
 
 row_1 = ['Facebook', 0.0, 'USD', 2974676, 3.5]
@@ -61,9 +63,11 @@ last_3_fb=row_1[-3:]
 pandora_3_4=row_5[2:4]
 
 #Output:
+```
 ['Facebook', 0.0, 'USD', 2974676]
 ['USD', 2974676, 3.5]
 ['USD', 1126879]
+```
 
 ## 6. List of Lists ##
 
