@@ -20,6 +20,12 @@ over_17 = content_ratings['17+']
 print(over_9)
 print(over_17)
 
+#Output:
+###
+987
+622
+###
+
 ## 4. Alternative Method of Creating a Dictionary ##
 
 content_ratings = {}
@@ -29,6 +35,12 @@ content_ratings['4+'] = 4433
 content_ratings['9+'] = 987
 
 over_12_n_apps = content_ratings['12+']
+
+#Output:
+###
+{'12+': 1155, '17+': 622, '4+': 4433, '9+': 987}
+1155
+###
 
 ## 5. Key-Value Pairs ##
 
@@ -41,6 +53,7 @@ d_1 = {'key_1': 'first_value',
        }
 error =True
 
+
 ## 6. Checking for Membership ##
 
 content_ratings = {'4+': 4433, '9+': 987, '12+': 1155, '17+': 622}
@@ -51,6 +64,11 @@ is_in_dictionary_2 = 987 in content_ratings
 if '17+' in content_ratings:
     result = 'It exists'
     print(result)
+       
+#Output:
+###
+#It exists
+###
     
 
 ## 7. Counting with Dictionaries ##
@@ -69,6 +87,10 @@ for row in apps_data[1:]:
         
 print(content_ratings)    
     
+#Output:
+###
+{'4+': 4433, '9+': 987, '12+': 1155, '17+': 622}
+###
 
 ## 8. Finding the Unique Values ##
 
@@ -87,6 +109,11 @@ for row in apps_data[1:]:
          content_ratings[c_rating] = 1
 print(content_ratings)            
 
+#Output:
+###
+{'4+': 4433, '12+': 1155, '9+': 987, '17+': 622}
+###
+
 ## 9. Proportions and Percentages ##
 
 opened_file = open('AppleStore.csv')
@@ -102,7 +129,12 @@ for row in apps_data[1:]:
     else:
         genre_counting[genre] = 1
         
-print(genre_counting)        
+print(genre_counting)     
+
+#Output:
+###
+{'Social Networking': 167, 'Photo & Video': 349, 'Games': 3862, 'Music': 138, 'Reference': 64, 'Health & Fitness': 180, 'Weather': 72, 'Utilities': 248, 'Travel': 81, 'Shopping': 122, 'News': 75, 'Navigation': 46, 'Lifestyle': 144, 'Entertainment': 535, 'Food & Drink': 63, 'Sports': 114, 'Book': 112, 'Finance': 104, 'Education': 453, 'Productivity': 178, 'Business': 57, 'Catalogs': 10, 'Medical': 23}
+###
 
 ## 10. Looping over Dictionaries ##
 
@@ -115,6 +147,12 @@ for iteration_variable in content_ratings:
 print(content_ratings)
 percentage_17_plus = content_ratings['17+'] * 100
 percentage_15_allowed = (content_ratings['4+'] + content_ratings['12+'] + content_ratings['9+'] )* 100
+
+#Output:
+###
+8.642489926358204
+91.35751007364179
+###
 
 ## 11. Keeping the Dictionaries Separate ##
 
@@ -130,7 +168,12 @@ for key in content_ratings:
     
     c_ratings_proportions[key] = proportion
     c_ratings_percentages[key] = percentage
-    
+
+#Output:
+###
+0.08642489926358204
+8.642489926358204
+###
 
 ## 12. Frequency Tables for Numerical Columns ##
 
@@ -146,4 +189,10 @@ for row in apps_data[1:]:
     
 min_size = min(data_sizes)
 max_size = max(data_sizes)
+
+#Output:
+###
+589824.0
+4025969664.0
+###
     
