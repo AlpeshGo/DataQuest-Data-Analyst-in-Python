@@ -9,3 +9,4 @@ This repo consist of DataQuest course of Data Analyst in Python.
 | 4. | [Conditional Statements](https://github.com/AlpeshGo/DataQuest-Data-Analyst-in-Python/blob/main/Conditional%20Statements-313.py) | Conditional statement like if, elif and if |
 | 5. | [Dictionaries and Frequency Tables](https://github.com/AlpeshGo/DataQuest-Data-Analyst-in-Python/blob/main/Dictionaries%20and%20Frequency%20Tables-314.py) | Empty dictionaries and frequency table |
 | 6. | [Functions: Fundamentals](https://github.com/AlpeshGo/DataQuest-Data-Analyst-in-Python/blob/main/Functions_%20Fundamentals-315.py) | Defined functions which can be used with any dataset|
+| 7. | [Functions: Intermediate](https://github.com/AlpeshGo/DataQuest-Data-Analyst-in-Python/blob/main/Functions_%20Fundamentals-315.py) | Local and Global scope of def function | 
