@@ -11,6 +11,12 @@ print(max_val_test_0)
 
 del max
 
+#Output:
+###
+10
+No max value returned
+###
+
 ## 3. Default Arguments ##
 
 def open_dataset(file_name = 'AppleStore.csv'):
@@ -23,6 +29,7 @@ def open_dataset(file_name = 'AppleStore.csv'):
     return data
 
 apps_data = open_dataset()
+
 
 ## 4. The Official Python Documentation ##
 
